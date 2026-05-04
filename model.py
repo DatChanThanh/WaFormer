@@ -48,7 +48,6 @@ val_dir = pathlib.Path('path/to/your/test')
 train_dataset = datasets.ImageFolder(root=str(train_dir), transform=train_transform)
 val_dataset = datasets.ImageFolder(root=str(val_dir), transform=val_transform)
 
-DataLoader cho huấn luyện và test
 train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True,
                           num_workers=4, pin_memory=True)
 val_loader = DataLoader(val_dataset, batch_size=32, shuffle=False,
